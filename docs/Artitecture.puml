@@ -1,0 +1,12 @@
+@startuml
+
+cloud "sam-hadoop" as network {
+  node "sam-hadoop-master" as m
+  node "sam-hadoop-worker1" as w1
+  node "sam-hadoop-worker2" as w2
+}
+
+m -- w1
+m -- w2
+
+@enduml
