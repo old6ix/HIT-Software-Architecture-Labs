@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/hadoop_docker"
+    schedule:
+      interval: "weekly"
