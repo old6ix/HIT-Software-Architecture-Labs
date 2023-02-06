@@ -1,5 +1,5 @@
 # 前置阶段：下载并解压hadoop二进制文件
-FROM ubuntu:22.04 AS download
+FROM ubuntu:23.04 AS download
 
 WORKDIR /root
 
@@ -17,7 +17,7 @@ RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.3/hadoop-3.2.3.tar.gz
 
 
 # 构建hadoop集群节点
-FROM ubuntu:22.04
+FROM ubuntu:23.04
 
 LABEL maintainer="jiabh (hitjbh@outlook.com)"
 
